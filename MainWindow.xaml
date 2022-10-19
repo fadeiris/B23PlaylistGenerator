@@ -1,0 +1,25 @@
+﻿<Window x:Class="B23PlaylistGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="B 站播放清單檔案產生器" Height="450" Width="750"
+        ResizeMode="CanMinimize" Loaded="Window_Loaded">
+    <Grid>
+        <Label x:Name="LUserAgent" Content="使用者代理字串" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TBUserAgent" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="592" ToolTip="使用者代理字串" TextChanged="TBUserAgent_TextChanged"/>
+        <Label x:Name="LMid" Content="Bilibili 使用者 mid" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TBMid" HorizontalAlignment="Left" Margin="10,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" Height="100" VerticalScrollBarVisibility="Visible" AcceptsReturn="True" ToolTip="一行一個 Bilibili 使用者 mid 或 Bilibili 個人空間的網址" TextChanged="TBMid_TextChanged"/>
+        <Label x:Name="LLog" Content="紀錄" HorizontalAlignment="Left" Margin="10,194,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TBLog" HorizontalAlignment="Left" Margin="10,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" Height="150" VerticalScrollBarVisibility="Visible" AcceptsReturn="True" ToolTip="紀錄" IsReadOnly="True"/>
+        <Label x:Name="LVersion" Content="版本：" HorizontalAlignment="Left" Margin="10,379,0,0" Height="25" VerticalAlignment="Top"/>
+        <Button x:Name="BtnGeneratePlaylist" Content="產生播放清單檔案" HorizontalAlignment="Left" Margin="607,33,0,0" VerticalAlignment="Top" Click="BtnGeneratePlaylist_Click"/>
+        <Button x:Name="BtnCancel" Content="取消" HorizontalAlignment="Left" Margin="502,360,0,0" VerticalAlignment="Top" Width="100" Click="BtnCancel_Click" ToolTip="可能需要點擊多次才可以取消作業" IsEnabled="False"/>
+        <Button x:Name="BtnClear" Content="清除" HorizontalAlignment="Left" Margin="607,360,0,0" VerticalAlignment="Top" Width="100" Click="BtnClear_Click"/>
+        <TextBox x:Name="TBExcludedWords" HorizontalAlignment="Left" Margin="415,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292" Height="100" VerticalScrollBarVisibility="Visible" AcceptsReturn="True" ToolTip="一行一個排除字詞" TextChanged="TBExcludedWords_TextChanged"/>
+        <Label x:Name="LExcludedWords" Content="排除字詞" HorizontalAlignment="Left" Margin="415,57,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="CBExportJsonc" Content="產生 *.jsonc 格式" HorizontalAlignment="Left" Margin="595,195,0,0" Unchecked="CBExportJsonc_Unchecked" VerticalAlignment="Top"/>
+        <CheckBox x:Name="CBJsoncAppendComment" Content="附加註解文字" HorizontalAlignment="Left" Margin="595,215,0,0" ToolTip="僅會在勾選「產生 *.jsonc 格式」選項後才會生效" Checked="CBJsoncAppendComment_Checked" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

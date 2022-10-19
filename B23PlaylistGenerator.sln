@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "B23PlaylistGenerator", "B23PlaylistGenerator.csproj", "{2814AE64-5810-4AD0-81CD-0884C85AF297}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BilibiliApi", "BiliBiliApi\BilibiliApi.csproj", "{49FBBD76-19D9-4A6E-8564-1275D216FE48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2814AE64-5810-4AD0-81CD-0884C85AF297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2814AE64-5810-4AD0-81CD-0884C85AF297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2814AE64-5810-4AD0-81CD-0884C85AF297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2814AE64-5810-4AD0-81CD-0884C85AF297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49FBBD76-19D9-4A6E-8564-1275D216FE48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49FBBD76-19D9-4A6E-8564-1275D216FE48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49FBBD76-19D9-4A6E-8564-1275D216FE48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49FBBD76-19D9-4A6E-8564-1275D216FE48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D30D6C4-B632-48A8-A7E3-6C40DF8D4FBF}
+	EndGlobalSection
+EndGlobal
